@@ -13,11 +13,13 @@ public class Question6 {
 
         int temp = 0;
 
-        while (num2 != 0) {
-            temp = num2;                    // num2  = 값 유지
-            num2 = num1 % num2;             //
-            num1 = temp;
+        while (num2 != 0) {                 // num1 = a, num2 = b 입력
+            temp = num2;                    // num1 = a, num2 = temp = b
+            num2 = num1 % num2;             // num1 = a, num2 = r
+            num1 = temp;                    // num1 = temp = b
 
+                                            // temp = num2 = b
+                                            // num1 = b, num2 = r
         }
         System.out.println("최대공약수: " + num1);
     }
